@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Myfont;
+    src: url(Marvelschrift.otf) format('woff2');
+}
+
+#row1{
+   display:flex;
+    width:100%; 
+}
+#row2{
+
+    display:flex;
+    width:100%;
+}
+
+.box{
+    flex:1;
+    width:400px;
+    height:250px;
+    background-color: red;
+    margin:50px;
+    text-align: center;
+}
+
+.phasestitle{
+    margin:100px;
+    font-family: Myfont;
+    font-size: 40px;
+}
+
+#title{
+    text-align: center;
+    font-size: 100px;
+     font-family: Myfont;
+}
+
+a {
+text-decoration: none;
+color: white;
+
+}
+a:hover{
+    color: black;
+}
