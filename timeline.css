@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Myfont;
+    src: url(Marvelschrift.otf);
+}
+
+body{
+    margin:0;
+    background:#111;
+    color:white;
+    overflow:hidden;
+    font-family:Arial;
+    font-size:14px;
+}
+
+#phaseTitle{
+    font-family:Myfont;
+    font-size:90px;
+    color:red;
+    text-align:center;
+    margin:20px;
+}
+
+.timeline{
+
+    background-position-x: 20px;
+    background-position-y:relative;
+
+    display:flex;
+
+    gap:140px;
+
+    overflow-x:auto;
+
+    align-items:center;
+
+    height:650px;
+    width:auto;
+
+    padding:0 120px;
+
+    margin-top:-40px;
+
+}
+
+/* Hide scrollbar */
+
+.timeline::-webkit-scrollbar{
+    display:none;
+}
+
+.line{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    top:52%;
+
+    height:6px;
+
+    background:red;
+
+    z-index:0;
+}
+
+.movie{
+
+    position:relative;
+
+    width:200px;
+
+}
+
+.posterBox{
+
+    background:#222;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    height:280px;
+
+}
+
+.movie img{
+
+    width:180px;
+    height:270px;
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.movie:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+.top{
+    transform: translateY(-65px);
+}
+
+.bottom{
+    transform: translateY(65px);
+}
+
+.top .info{
+    bottom:190px;
+}
+
+.bottom .info{
+    top:180px;
+}
+
+
+/* Connector */
+/*
+.connector{
+    width:4px;
+    height:35px;
+    background:white;
+    margin:auto;
+}*/
+
+/* Year */
+
+.year{
+
+    font-weight:bold;
+
+    color:#ff5555;
+
+    font-size:18px;
+
+    margin:6px 0;
+
+}
+
+/* Information */
+
+.info{
+
+    opacity:0;
+
+    max-height:0;
+
+    overflow:hidden;
+
+    padding:0 15px;
+
+    transition:.4s;
+
+}
+
+/* Expansion */
+
+/*.movie.active img{
+
+    width:220px;
+
+}
+
+.movie.active{
+
+    width:220px;
+
+}*/
+.movie.active .posterBox{
+
+    height:470px;
+
+}
+
+.movie.active .info{
+
+    opacity:1;
+
+    max-height:200px;
+
+    padding:15px;
+
+}
