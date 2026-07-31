@@ -113,7 +113,7 @@ body{
 }
 
 .top .info{
-    bottom:190px;
+    bottom:180px;
 }
 
 .bottom .info{
@@ -155,15 +155,36 @@ body{
 
     overflow-x: hidden;
 
-    overflow-y:scroll;
+    overflow-y:auto;
 
     scrollbar-width:thin;
-    
+    scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+
 
 
     padding:0 15px;
 
     transition:.4s;
+
+}
+.info p{
+    padding-bottom: 20px;
+}
+
+.info::-webkit-scrollbar{
+    width: 8px;
+}
+.info::-webkit-scrollbar-track {
+  background: transparent;
+}
+.info::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.info::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
 
 }
 
