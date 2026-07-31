@@ -152,9 +152,14 @@ body{
 
     max-height:0;
 
-    overflow:scroll;
+
+    overflow-x: hidden;
+
+    overflow-y:scroll;
+
     scrollbar-width:thin;
-    scroll;
+    
+
 
     padding:0 15px;
 
