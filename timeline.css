@@ -105,6 +105,7 @@ body{
 
 .top{
     transform: translateY(-65px);
+
 }
 
 .bottom{
@@ -151,13 +152,16 @@ body{
 
     max-height:0;
 
-    overflow:hidden;
+    overflow:scroll;
+    scrollbar-width:thin;
+    scroll;
 
     padding:0 15px;
 
     transition:.4s;
 
 }
+
 
 /* Expansion */
 
