@@ -15,9 +15,19 @@ body{
 #phaseTitle{
     font-family:Myfont;
     font-size:90px;
-    color:red;
+    color:white;
     text-align:center;
-    margin:20px;
+    margin: 20px;
+    text-decoration: none;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: none;
 }
 
 .timeline{
